@@ -1,0 +1,48 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+junit.xml
+
+# production
+out/
+build/
+.next/
+
+# misc
+.vscode/*
+!.vscode/accelerate.code-snippets
+.idea/
+.DS_Store
+!/scripts/docker/.npmrc
+CHANGELOG.md
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# for python virtual envs
+/venv
+/.venv
+/env
+/.env
+.env.*
+
+# for transpiled code
+/src-js
+.swc/
+public/__ENV.js
+
+# Terraform
+.terraform
+tfplan
+pact/pacts/*.json
+
+storybook-static/
+chromatic.log
+build-storybook.log
