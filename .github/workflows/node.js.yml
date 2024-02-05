@@ -3,10 +3,8 @@ name: Node.js CI
 on: [push]
 
 jobs:
-  build:
-
+  vitest:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -16,4 +14,4 @@ jobs:
       - run: npm ci --force
         env:
           B64_PERSONAL_ACCESS_TOKEN: ${{ secrets.B64_PERSONAL_ACCESS_TOKEN }}
-      - run: npm test:vitest
+      - run: npm run test:vitest
