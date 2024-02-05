@@ -10,8 +10,7 @@ const wrapper = ApolloWrapper;
 
 const server = setupServer(listChatsResponseHandler);
 server.events.on('request:start', async ({ request }) => {
-  // const payload = await request.clone().json();
-  console.log('Start process for handler with operationName', request);
+  console.log('Start process for', request);
 });
 
 describe('useAxelChats', () => {
