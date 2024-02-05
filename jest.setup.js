@@ -48,7 +48,6 @@ jest.mock('./src/hooks/use-user', () => ({ useUser: jest.fn() }));
 jest.mock('./src/hooks/use-is-authenticated', () => ({
   useIsAuthenticated: jest.fn(),
 }));
-jest.mock('./src/components/MarkdownEditor', () => jest.fn());
 
 jest.mock('remark-gfm', () => jest.fn(() => {}));
 jest.mock('rehype-raw', () => jest.fn(() => {}));
